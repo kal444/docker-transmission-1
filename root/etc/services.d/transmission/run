@@ -7,6 +7,9 @@ _term() {
 
         trap _term SIGTERM
 	
+umask ${UMASK_SET:-022}
+
+exec \
 	s6-setuidgid abc /usr/bin/transmission-daemon \
 	-g /config -c /watch -f &
 
