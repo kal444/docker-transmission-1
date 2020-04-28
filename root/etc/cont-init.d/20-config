@@ -19,7 +19,6 @@ fi
 # permissions
 chown abc:abc \
 	/config/settings.json \
-	/config/blocklist-update.sh \
 	/downloads \
 	/downloads/complete \
 	/downloads/incomplete \
